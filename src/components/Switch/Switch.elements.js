@@ -35,6 +35,6 @@ export const ButtonSwitch = styled.button`
   border: none;
   border-radius: 50%;
   background-color: #fff;
-  transition: 0.4s all ease-in;
+  transition: 0.5s all ease-in;
   outline: none;
 `;

@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const CoverContainer = styled.div`
     width: 100%;
-    height: 100hv;
+    height: 100vh;
     justify-content: center;
     background-color: ${({theme}) => theme.bgc};
     transition: 0.5s all ease-in;
+    padding: 2rem;
+    box-sizing: border-box;
 `
 export const CoverWrapper = styled.div`
-    width: 100%M
-    height: 100%;
+    width: 100%;
+    height: 100hw;
     margin: auto;
     max-width: 1300px;
     display: flex;
@@ -23,7 +25,7 @@ export const InfoContainer = styled.div`
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
 
     svg {
         font-size: 6rem;
@@ -50,7 +52,7 @@ export const InfoContainer = styled.div`
 
 export const CustomButton = styled.button`
     margin-top: 100px;
-    color: #eee;
+    color: ${({theme}) => theme.bgc};
     background-color: ${({theme}) => theme.button};
     font-family: "Ubuntu";
     font-size: 1rem;

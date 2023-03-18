@@ -5,11 +5,10 @@ import {
   InfoContainer,
   CustomButton,
 } from "./Cover.elements";
-import { BsSun, BsMoon } from "react-icons/bs";
-import Switch from "../Switch/Switch";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const Cover = (props) => {
-  let icono = props.theme === "light" ? <BsSun /> : <BsMoon />;
+  let icono = props.theme === "light" ? <FaSun /> : <FaMoon />;
 
   let leyenda =
     props.theme === "light" ? <h1>Light Mode</h1> : <h1>Dark Mode</h1>;
