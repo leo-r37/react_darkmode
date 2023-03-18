@@ -4,7 +4,8 @@ export const CoverContainer = styled.div`
     width: 100%;
     height: 100hv;
     justify-content: center;
-    background-color: #eee;
+    background-color: ${({theme}) => theme.bgc};
+    transition: 0.5s all ease-in;
 `
 export const CoverWrapper = styled.div`
     width: 100%M
@@ -26,13 +27,14 @@ export const InfoContainer = styled.div`
 
     svg {
         font-size: 6rem;
-        fill: #393939;
+        fill: ${({theme}) => theme.text};
     }
 
     h1 {
         text-align: center;
         width: 100%;
         font-family: "Ubuntu";
+        color: ${({theme}) => theme.text};
 
         &:nth-of-type(1) {
             font-weight: 300;
@@ -49,7 +51,7 @@ export const InfoContainer = styled.div`
 export const CustomButton = styled.button`
     margin-top: 100px;
     color: #eee;
-    background-color: #393939;
+    background-color: ${({theme}) => theme.button};
     font-family: "Ubuntu";
     font-size: 1rem;
     outline: none;
@@ -59,7 +61,7 @@ export const CustomButton = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: #000;
+        background-color: ${({theme}) => theme.hover};
         transition: 0.4s ease-in;
     }
 `

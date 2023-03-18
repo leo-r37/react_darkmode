@@ -6,16 +6,22 @@ import {
   CustomButton,
 } from "./Cover.elements";
 import { BsSun, BsMoon } from "react-icons/bs";
+import Switch from "../Switch/Switch";
 
-const Cover = () => {
+const Cover = (props) => {
+  let icono = props.theme === "light" ? <BsSun /> : <BsMoon />;
+
+  let leyenda =
+    props.theme === "light" ? <h1>Light Mode</h1> : <h1>Dark Mode</h1>;
+
   return (
     <>
       <CoverContainer>
         <CoverWrapper>
           <InfoContainer>
-            <BsSun />
+            {icono}
             <h1>Hello, I'm in</h1>
-            <h1>Light Mode</h1>
+            {leyenda}
             <CustomButton>Get Started</CustomButton>
           </InfoContainer>
         </CoverWrapper>
